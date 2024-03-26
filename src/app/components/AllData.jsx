@@ -27,6 +27,7 @@ const AllData = () => {
                             <option value="Tab10" className='text-[20px] font-semibold'>December</option>
                         </select>
                     </label>
+                    <h1 className='text-[40px] font-semibold'>Work Sheet 2024</h1>
                     <Link href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                         <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
@@ -38,14 +39,15 @@ const AllData = () => {
                     <div>{data === "Tab1" && (
                         <div className='flex flex-row flex-nowrap -mx-3'>
                             <div className="w-5/12 px-3 flex flex-col gap-10">
-                                <h2 className='font-semibold text-[25px]'>Swiper Slider With Html :-</h2>
+                                <h2 className='font-semibold text-[25px]'>Swiper Slider in Html :-</h2>
                                 <h2 className='font-semibold text-[25px]'> next.js basic :-<span className='block'>(props , routing, map , object) </span></h2>
                                 <h2 className='font-semibold text-[25px]'> 248 Labs :-</h2>
                                 <h2 className='font-semibold text-[25px]'> Cloopp :-</h2>
                                 <h2 className='font-semibold text-[25px] pt-5'> Live Test Home Page :-</h2>
                                 <h2 className='font-semibold text-[25px] '> Form Validation In React :-</h2>
                                 <h2 className='font-semibold text-[25px] '> Html Setup in Vite :-</h2>
-                                <h2 className='font-semibold text-[25px] pt-5'> Swiper Slider in React :-</h2>
+                                <h2 className='font-semibold text-[25px] py-5'> Swiper Slider in React :-</h2>
+                                <h2 className='font-semibold text-[25px] '> WorkSheet in Next :-</h2>
                             </div>
                             <div className='w-7/12 px-3 flex flex-col gap-7'>
                                 <div className='flex flex-col'>
@@ -126,6 +128,16 @@ const AllData = () => {
                                     <div className='flex gap-5 items-center'>
                                         <h3>Vercel Link :-</h3>
                                         <a href="https://my-react-swiper.vercel.app/" target='_blank'> https://my-react-swiper.vercel.app/</a>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col'>
+                                    <div className='flex gap-5 items-center'>
+                                        <h3>GitHub Link :-</h3>
+                                        <a href="https://github.com/Gopaltarika/all-data.git" target='_blank'>https://github.com/Gopaltarika/all-data.git</a>
+                                    </div>
+                                    <div className='flex gap-5 items-center'>
+                                        <h3>Vercel Link :-</h3>
+                                        <a href="https://all-data.vercel.app/" target='_blank'> https://all-data.vercel.app/</a>
                                     </div>
                                 </div>
                             </div>

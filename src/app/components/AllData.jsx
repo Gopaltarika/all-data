@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
+import April from './April'
 
 const AllData = () => {
     const [data, setdata] = useState("Tab1")
@@ -147,7 +148,10 @@ const AllData = () => {
                             </div>
                         </div>
                     )}</div>
-                    {data === "Tab2" && (<h1>april</h1>)}
+                    {data === "Tab2" && (
+                    <div>
+                        <April />
+                    </div>)}
                     {data === "Tab3" && (<h1>may</h1>)}
                     {data === "Tab4" && (<h1>june</h1>)}
                     {data === "Tab5" && (<h1>july</h1>)}

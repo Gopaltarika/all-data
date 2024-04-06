@@ -4,28 +4,42 @@ import React, { useState } from 'react'
 import April from './April'
 
 const AllData = () => {
-    const [data, setdata] = useState("Tab1")
-
+    const month = [
+        'Tab0',
+        'Tab1',
+        'Tab2',
+        'Tab3',
+        'Tab4',
+        'Tab5',
+        'Tab6',
+        'Tab7',
+        'Tab8',
+        'Tab9',
+        'Tab10',
+        'Tab11',
+    ]
+    const crruentmonth = month[new Date().getMonth()]
+    const [data, setdata] = useState(crruentmonth)
     const changeTab = (event) => {
         setdata(event.target.value);
     }
-
+    console.log(data);
     return (
         <div>
             <nav className='h-[100px] flex justify-center w-full fixed bg-white'>
                 <div className="max-w-[1140px] mx-auto px-3 w-full flex justify-between  items-center">
                     <label htmlFor="month">
-                        <select id="month" className='border-[2px] px-3 border-black py-2 rounded-2xl' onChange={changeTab}>
-                            <option value="Tab1" className='text-[20px] font-semibold'>March</option>
-                            <option value="Tab2" className='text-[20px] font-semibold'>April</option>
-                            <option value="Tab3" className='text-[20px] font-semibold'>May</option>
-                            <option value="Tab4" className='text-[20px] font-semibold'>June</option>
-                            <option value="Tab5" className='text-[20px] font-semibold'>July</option>
-                            <option value="Tab6" className='text-[20px] font-semibold'>August</option>
-                            <option value="Tab7" className='text-[20px] font-semibold'>September</option>
-                            <option value="Tab8" className='text-[20px] font-semibold'>October</option>
-                            <option value="Tab9" className='text-[20px] font-semibold'>November</option>
-                            <option value="Tab10" className='text-[20px] font-semibold'>December</option>
+                        <select id="month" className='border-[2px] px-3 border-black py-2 rounded-2xl' value={data} onChange={changeTab}>
+                            <option value="Tab2" className='text-[20px] font-semibold'>March</option>
+                            <option value="Tab3" className='text-[20px] font-semibold'>April</option>
+                            <option value="Tab4" className='text-[20px] font-semibold'>May</option>
+                            <option value="Tab5" className='text-[20px] font-semibold'>June</option>
+                            <option value="Tab6" className='text-[20px] font-semibold'>July</option>
+                            <option value="Tab7" className='text-[20px] font-semibold'>August</option>
+                            <option value="Tab8" className='text-[20px] font-semibold'>September</option>
+                            <option value="Tab9" className='text-[20px] font-semibold'>October</option>
+                            <option value="Tab10" className='text-[20px] font-semibold'>November</option>
+                            <option value="Tab11" className='text-[20px] font-semibold'>December</option>
                         </select>
                     </label>
                     <h1 className='text-[40px] font-semibold'>Work Sheet 2024</h1>
@@ -41,7 +55,7 @@ const AllData = () => {
             </nav>
             <header className='pt-[100px]'>
                 <div className='max-w-[1140px] mx-auto px-3'>
-                    <div>{data === "Tab1" && (
+                    <div>{data === "Tab2" && (
                         <div className='flex flex-row flex-nowrap -mx-3'>
                             <div className="w-5/12 px-3 flex flex-col gap-10">
                                 <h2 className='font-semibold text-[25px]'>Swiper Slider in Html :-</h2>
@@ -148,18 +162,18 @@ const AllData = () => {
                             </div>
                         </div>
                     )}</div>
-                    {data === "Tab2" && (
-                    <div>
-                        <April />
-                    </div>)}
-                    {data === "Tab3" && (<h1>may</h1>)}
-                    {data === "Tab4" && (<h1>june</h1>)}
-                    {data === "Tab5" && (<h1>july</h1>)}
-                    {data === "Tab6" && (<h1>august</h1>)}
-                    {data === "Tab7" && (<h1>September</h1>)}
-                    {data === "Tab8" && (<h1>October</h1>)}
-                    {data === "Tab9" && (<h1>November</h1>)}
-                    {data === "Tab10" && (<h1>December</h1>)}
+                    {data === "Tab3" && (
+                        <div>
+                            <April />
+                        </div>)}
+                    {data === "Tab4" && (<h1>may</h1>)}
+                    {data === "Tab5" && (<h1>june</h1>)}
+                    {data === "Tab6" && (<h1>july</h1>)}
+                    {data === "Tab7" && (<h1>august</h1>)}
+                    {data === "Tab8" && (<h1>September</h1>)}
+                    {data === "Tab9" && (<h1>October</h1>)}
+                    {data === "Tab10" && (<h1>November</h1>)}
+                    {data === "Tab11" && (<h1>December</h1>)}
                 </div>
             </header>
         </div>

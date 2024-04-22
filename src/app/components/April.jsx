@@ -6,7 +6,7 @@ const April = () => {
             <div className="w-5/12 px-3 flex flex-col gap-10">
                 <h2 className='font-semibold text-[25px]'>Noble Mind :-</h2>
                 <h2 className='font-semibold text-[25px]'>Email Js With Form Validation :-</h2>
-                <h2 className='font-semibold text-[25px]'>HubRich project :-</h2>
+                <h2 className='font-semibold text-[25px] pt-5'>HubRich project :-</h2>
             </div>
             <div className='w-7/12 px-3 flex flex-col gap-7'>
                 <div className='flex flex-col'>

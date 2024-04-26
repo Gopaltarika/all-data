@@ -7,6 +7,7 @@ const April = () => {
                 <h2 className='font-semibold text-[25px]'>Noble Mind :-</h2>
                 <h2 className='font-semibold text-[25px]'>Email Js With Form Validation :-</h2>
                 <h2 className='font-semibold text-[25px] pt-5'>HubRich project :-</h2>
+                <h2 className='font-semibold text-[25px] pt-5'>revise hooks :-</h2>
             </div>
             <div className='w-7/12 px-3 flex flex-col gap-7'>
                 <div className='flex flex-col'>
@@ -37,6 +38,16 @@ const April = () => {
                     <div className='flex gap-5 items-center'>
                         <h3>Vercel Link :-</h3>
                         <a href="https://hubrich.vercel.app/" target='_blank'>https://hubrich.vercel.app/</a>
+                    </div>
+                </div>
+                <div className='flex flex-col'>
+                    <div className='flex gap-5 items-center'>
+                        <h3>GitHub Link :-</h3>
+                        <a href="https://github.com/Gopaltarika/learn-hooks.git" target='_blank'>https://github.com/Gopaltarika/learn-hooks.git</a>
+                    </div>
+                    <div className='flex gap-5 items-center'>
+                        <h3>Vercel Link :-</h3>
+                        <a href="https://learn-hooks-six.vercel.app/" target='_blank'>https://learn-hooks-six.vercel.app/</a>
                     </div>
                 </div>
             </div>

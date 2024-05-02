@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import April from './April'
+import May from './May'
 
 const AllData = () => {
     const month = [
@@ -166,7 +167,9 @@ const AllData = () => {
                         <div>
                             <April />
                         </div>)}
-                    {data === "Tab4" && (<h1>may</h1>)}
+                    {data === "Tab4" && (<div>
+                        <May />
+                    </div>)}
                     {data === "Tab5" && (<h1>june</h1>)}
                     {data === "Tab6" && (<h1>july</h1>)}
                     {data === "Tab7" && (<h1>august</h1>)}
